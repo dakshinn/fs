@@ -24,7 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 
-import com.sun.corba.se.pept.transport.Connection;
+//import com.sun.corba.se.pept.transport.Connection;
 
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
@@ -43,6 +43,7 @@ public class MyController {
 		 	ModelAndView mav = new ModelAndView();
 		 	//mav.addObject("login", login);
 		  	String result=dao.auth(login);
+		  	String result123=dao.auth(login);
 	        if(result.equals("success"))
 	        {
 //	        	System.out.println("Success");
